@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Outrun NightDrive</title>
+    <meta name="description" content="Outrun Nightdrive is a free 24/7 music playlist dedicated to Outrun; bringing 80s aesthetics and music to your device wherever you have Internet connectivity.">
+    <link rel="icon" type="image/png" href="https://www.dropbox.com/s/mi4xhrrigdwch1b/icon1.png?raw=1">
+    <link rel="stylesheet" href="https://unpkg.com/98.css@0.1.18/dist/98.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+<div id="app">
+        <video preload="none" src="" style="display: none;"   ></video>
+
+    <div class="app-desktop" style="" >
+
+        <div class="window main-window" data-order="1"  style="width: 450px; z-index: 100; position: absolute; display: block">
+                <div class="title-bar " >
+                    <img class="title-icon" src="https://www.dropbox.com/s/mi4xhrrigdwch1b/icon1.png?raw=1" alt="">
+                    <div class="title-bar-text">Outrun Nightdrive</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+<!--                        <button aria-label="Close"></button>-->
+                    </div>
+                </div>
+                <div class="window-body">
+                    <div class="menu-bar">
+                        <div class="menu-item playlist-menu"><u>P</u>laylist</div>
+                        <div class="menu-item about-menu"><u>A</u>bout</div>
+                        <div class="menu-item support-menu"><u>S</u>upport Us</div>
+
+                    </div>
+
+                    <div class="thin-outline-active window-content-holder" >
+                        <div class="window-content">
+                            <div class="cover-contain small-active-box" >
+                                <img class="cover-image" src="https://i2.lensdump.com/i/rzvD5o.jpg"  alt="">
+                            </div>
+                            <div class="right-content">
+                                <div class="song-title">Tonight</div>
+                                <div class="song-artist">Timecop1983</div>
+                                <div class="duration-volume-container">
+                                    <div class="duration-con">
+                                        <div class="duration-holder thin-outline-active">
+                                            <div class="current-duration duration-time">0:00 </div>
+                                            &nbsp
+                                            <div class="duration-length duration-time">/ 0:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="volume-con">
+                                        <div class="volume-holder">
+                                            <div class="field-row" style="">
+                                                <label for="range28"></label>
+                                                <input id="range28" class="has-box-indicator" type="range" min="0.01" max="1" step="0.01" value="0.2" />
+                                            </div>
+                                            <div class="volume-sound-icon"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-button-container">
+                                    <div class="play-pause-con">
+                                        <button class="play-btn" >
+                                            <img src="images/icons8-play-24.png" alt="" class="icon-img">
+                                        </button>
+                                        <button class="pause-btn" >
+                                            <img src="images/icons8-pause-24.png" alt="" class="icon-img">
+                                        </button>
+                                    </div>
+                                    <div class="skip-reverse-con">
+                                        <button class="replay-btn" >
+                                            <img src="images/icons8-skip-to-start-48.png" alt="" class="skip-icon">
+                                        </button>
+                                        <button class="skip-btn" >
+                                            <img src="images/icons8-end-48.png" alt="" class="skip-icon">
+                                        </button>
+                                    </div>
+                                    <div class="settings-con">
+                                        <button class="setting-btn">
+                                            <img src="images/icons8-settings-24.png" alt="" class="icon-img">
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-bar ">
+                        <p class="status-bar-field "></p>
+                    </div>
+                </div>
+            </div>
+
+        <div class="window support-window" data-order="4"  style="width:440px; z-index: 100; position: absolute; display: none">
+            <div class="title-bar inactive" >
+                <img class="title-icon" src="https://www.dropbox.com/s/mi4xhrrigdwch1b/icon1.png?raw=1" alt="">
+                <div class="title-bar-text">Support-Us</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="window-content-holder">
+                    <div class="window-content-about small-active-box ">
+                        <ul class="tree-view  ">
+                            <div class="about-sub">Love Outrun NightDrive?</div>
+                            <div class="about-text">You can support us by donating via Monero or BitcoinCash</div>
+                            <div class="about-sub">Monero (xmr)</div>
+                            <div class="about-text">86ny9HBFNbHAgdVnotg15YZMchuxq9TsTgbPVLDtXyECK84Drcxk9wUhLiNFCtWU8VQoYqFGDkk2gKAFUsHjQTuRKqd2P4x</div>
+                            <div class="about-sub">Bitcoin Cash (bch)</div>
+                            <div class="about-text">bitcoincash:qzztl8rv7vp39pd7l2y8qz2xtxy0rl7ehsce7vygjp</div>
+                        </ul>
+
+                    </div>
+                    <div class="window-bottom">
+                        <button class="support-close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="window playlist-window" data-order="3" style="width:440px; z-index: 100; position: absolute; display: none">
+            <div class="title-bar inactive" >
+                <img class="title-icon" src="https://www.dropbox.com/s/mi4xhrrigdwch1b/icon1.png?raw=1" alt="">
+                <div class="title-bar-text">Playlist</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="window-content-holder">
+                    <div class="window-content-alt small-active-box ">
+                        <ul class="playlist-s"></ul>
+                    </div>
+                    <div class="window-bottom">
+                        <button class="playlist-shuffle">Shuffle</button>
+                        <button class="playlist-close">Close</button>
+                    </div>
+
+                </div>
+                <div class="status-bar alt-status-bar">
+                    <div class="status-bar-field playlist-status-field"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="window about-window" data-order="2" style="width:450px; z-index: 100; position: absolute; display: none">
+            <div class="title-bar inactive" >
+                <img class="title-icon" src="https://www.dropbox.com/s/mi4xhrrigdwch1b/icon1.png?raw=1" alt="">
+                <div class="title-bar-text">About</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="window-content-holder">
+                    <div class="window-content-support small-active-box ">
+                        <ul class="tree-view  ">
+                            <div class="about-sub">Welcome to Outrun NightDrive</div>
+                            <div class="about-text">Outrun Nightdrive is an outrun style music playlist based off the design
+                            of <a href="https://plaza.one/" target="_blank" rel="noopener noreferrer" id="about-link1">Plaza.one</a>
+                                <br>
+                            and created using
+                                <a href="https://github.com/jdan/98.css/" target="_blank" rel="noopener noreferrer" id="about-link2">98.css</a>
+                            </div>
+
+                            <div class="about-sub">Creator</div>
+                            <div class="about-text">
+                                <a href="https://github.com/MooseCapital/Outrun-NightDrive" target="_blank" rel="noopener noreferrer" id="about-link3">Moose Capital</a>
+                            </div>
+                            <div class="about-text">
+
+                                <a href="mailto:moosecapital@tutanota.com" target="_blank" rel="noopener noreferrer" id="about-link4">Contact</a>
+                            </div>
+
+
+
+
+
+                        </ul>
+
+                    </div>
+                    <div class="window-bottom">
+                        <button class="about-close ">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="window settings-window" data-order="5" style="width:280px; z-index: 100; position: absolute; display: none">
+            <div class="title-bar inactive" >
+                <img class="title-icon" src="https://plaza.one/img/win/ball.png" alt="">
+                <div class="title-bar-text">Appearance Settings</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="window-content-holder settings-content-holder">
+                    <div class="content-settings  ">
+                        <div class="img-background settings-border">
+                            <div class="window-content-holder">
+                                <div class="settings-border-title">Background</div>
+                                <div class="settings-background-info small-active-box">
+                                    <div>
+                                        <b>Background:</b>
+                                        <div class="background-s"></div>
+                                    </div>
+                                    <div>
+                                        <b>Author:</b>
+                                        <div class="author-s"></div>
+                                    </div>
+                                    <div>
+                                        <b>Source:</b>
+                                        <a href="" class="source-s" target="_blank" rel="noopener noreferrer"></a>
+
+                                    </div>
+                                </div>
+                                <div class="background-btn ">
+                                    <button class="previous-bg"><</button>
+                                    <button class="next-bg">></button>
+                                    <button class="play-video">
+                                        <img src="images/icons8-play-24.png" alt="" class="icon-img ">
+                                    </button>
+                                    <button class="pause-video">
+                                        <img src="images/icons8-pause-24.png" alt="" class="icon-img ">
+                                    </button>
+                                </div>
+                                <div class="background-btn background-btn-2">
+                                    <button class="gif-s">Gifs</button>
+                                    <button class="image-s">Images</button>
+                                    <button class="video-s">Videos</button>
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="window-bottom">
+                        <button class="settings-close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="taskbar">
+        <div style="flex: 0 0 10px;">
+            <div class="divider small-shadow">
+                <br>
+            </div>
+        </div>
+        <button class="task-btn active-button" style="display: grid;" data-order="1">
+            <img src="https://www.dropbox.com/s/mi4xhrrigdwch1b/icon1.png?raw=1" alt="">
+            <div >Outrun Nightdrive</div>
+
+        </button>
+        <button class="task-btn " style="display: none;" data-order="2">
+            <img src="https://www.dropbox.com/s/mi4xhrrigdwch1b/icon1.png?raw=1" alt="">
+            <div >About</div>
+        </button>
+        <button class="task-btn" style="display: none;" data-order="3">
+            <img src="https://www.dropbox.com/s/mi4xhrrigdwch1b/icon1.png?raw=1" alt="" >
+            <div >Playlist</div>
+        </button>
+        <button class="task-btn" style="display: none;" data-order="4">
+            <img src="https://www.dropbox.com/s/mi4xhrrigdwch1b/icon1.png?raw=1" alt="">
+            <div >Support Us</div>
+        </button>
+        <button class="task-btn" style="display: none;" data-order="5">
+            <img src="https://www.dropbox.com/s/mi4xhrrigdwch1b/icon1.png?raw=1" alt="">
+            <div >Appearance</div>
+        </button>
+        <audio  preload="auto"  src=""></audio>
+        <div class="small-active-box time"></div>
+    </div>
+
+</div>
+</body>
+</html>
