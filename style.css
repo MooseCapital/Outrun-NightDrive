@@ -560,15 +560,31 @@ display: block;
 display: grid;
 align-self: center;
 padding: 8px;
+
+grid-template: auto / 1fr auto;
+}
+
+.playlist-middle-left {
+
+}
+.playlist-middle-right {
+    display: grid;
+}
+.playlist-play-button {
+    align-self: center;
+    height: max-content;
 }
 .playlist-artist {
     font-size: 14px;
-
+    grid-column: 0 / 1;
+    grid-row: 1 / 2 ;
 }
 .playlist-song {
 font-size: 14px;
     font-weight: 700;
     margin-bottom: 4px;
+    grid-column: 0 / 1;
+    grid-row: 0 / 1 ;
 }
 .cover-icon {
 margin-left: 6px;
